@@ -46,4 +46,55 @@ If a parameter is passed with a default value, this means passing it in is optio
 
 You are able to pass data structures into your functions. Very much like all other language. You just pass the name of it just like every other data type
 
-### 
+### Variable Number of Arguments
+
+You can pass more than one argument as a single parameter to python functions. It will be passed in as a _tuple_. Which in return can be used to do the task at hand. If you pass arguments AFTER the variable argument, it will need to be a _named_ argument otherwise it will crash 
+
+### Scope
+
+Just as other languages, the concept of scope is the same. Variables are only bound to the limits that are placed on them. A variable called in a function is only relative to that function. Calling it outside of the function will cause an error. A block of code is often called a __suite__
+
+The types of scope are:
+- __local__: refers to same suite of statements, these are local to the suite of code, this is always searched for first
+- __global__: refers to the entire program. You can use/modify these variables throughout the entire program. Searched for after all local variables have been searched
+- __built-in__: available to all statements in the application
+- __nonlocal__: requires nested functions
+
+### Functions - "First Class Citizens"
+
+Two common practices when using functions are as follows:
+- _fun()_ = invoking the function named __fun__
+- _fun_ = referencing the function named __fun__
+
+The second one allows us to pass an entire function into another function
+
+### The map Data Type
+
+This allows us to apply a function to each element of an iterable object. These iterables include:
+- list
+- str
+- tuple
+- dict
+
+An example of this is in the _Exercises_ dicrectory
+
+### The filter Data Type
+
+This is an iterator that applies a function to every item of an iterable object, yeilding all the results that return True
+
+### A Dictionary of Functions
+
+You can create a dictionary that houses functions
+
+### Nested Functions
+
+You can call functions within other functions, this is the basics of _recursion_. The inner function can access the variables in outer function, but not the other way around
+
+### lambda
+
+This is an _anonymous_ function. Meaning they do not have a name and they are limited to only one line. Often used in conjunction with __filter__ and __map__
+
+### Recursion
+
+One of the most important topics, _recursion_ is the act of calling a function INSIDE of itself. A good example of this is the _fibonacci_ sequence. This is dangerous because if your base case is not good, it will cause a crash and run infinitely. Can be very costly, so may not use this often due to other, more robust solutions
+
