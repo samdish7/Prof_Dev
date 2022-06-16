@@ -49,4 +49,8 @@ Class data is part of the class but not part of an object. Instance variables ar
 
 These are the exact same concepts as other languages. Examples of the syntax are shown in the _Exercises_ directory
 
+### Type Identification
+
+The _type()_ function identifies what data type your variable is. You can also use the _isinstance()_ & _issubclass()_ functions to determine if they are either a subclass or an instance of a class
+
 

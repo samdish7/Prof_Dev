@@ -1,0 +1,3 @@
+# ignore useless files
+__pycache__
+*.swp
