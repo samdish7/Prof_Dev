@@ -83,4 +83,6 @@ The higher up in the list, the higher the priority. You can specify something th
 
 Some values in CSS are quite... cumbersome, so the solution to this is to create variables that store the values so you can use them in a more simple fashion. 
 
+# Semantic Grouping
+
 
