@@ -1,0 +1,40 @@
+body {
+font-size:14pt;
+font-family: helvetica, arial, sans-serif;
+background-color: var(--light_color);
+color: var(--dark_color);
+}
+ul{
+list-style-type: none;
+}
+
+:root{
+--light_color: #00FFFF; /*Aqua*/
+--light2_color: #7FFF00; /*Chartreuse*/
+--dark_color: #00008B; /*DarkBlue*/
+--dark2_color: #006400; /*DarkGreen*/
+--dark3_color: #9400D3; /*DarkViolet*/
+--white: #FFFFFF;
+}
+
+.brief_poster{
+height: 200px;
+}
+.social_icon{
+height: 30px;
+}
+
+
+#day_chooser{
+color: var(--white); 
+background-color: var(--dark_color);
+list-style-type: none;
+}
+
+#logo{
+height: 50px;
+}
+
+#cart{
+height: 40px;
+}
