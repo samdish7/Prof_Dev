@@ -88,3 +88,112 @@ Some values in CSS are quite... cumbersome, so the solution to this is to create
 HTML5 semantic elements communicate _meaning_. A __nav__ section is used with links or to parts within the page. 
 
 A __header__ contains the stuff at the top of a section as well as a __footer__ contains the stuff at the bottom of the section.
+
+The __main__ tag is one of the newer tags introduced. ONLY 1 PER DOCUMENT! Also cannot be a descendent of an _article, footer, header, or nav_ element.
+
+__details & summary__ tags allow collapsible regions without _JavaScript_. __figure__ allows for a more condense version of the same thing you can make with a div. 
+
+The __aside__ element is a tag that describes content that is not considered "primary" to the webpage. Such examples could be: _author's note, related content, ads_. 
+
+# How to Position with CSS
+
+Positioning is key to a good webpage. Good positioning makes navigation easier, looks nicer, and is generally easier to maintain. 
+
+__display__ lays out _me_ or the things _inside me_. Things that affect _me_:
+* block
+* inline
+* inline-block
+
+Things that affect my _children_:
+* flex
+* grid
+* table
+* list-item
+
+__inline__ qualities:
+- Flows along with the text around it.
+- No concept of width or height.
+- Ignores the box model.
+
+__<block>__ qualities:
+- Creates a clean break before and after.
+- Allows you to set the width and height.
+- Honors the box model.
+
+The _box model_ provides aesthetic space. This includes __margins__ & __padding__.
+
+There are many units of measurement:
+* Pixels __px__
+* Ems __em__
+* Percentages __%__
+* Viewport size __vh__ & __vw__
+
+__%__ & __px__ are best for _screen layout_. __ems__ are for _text_!
+
+## Centering
+
+### Horizontal Centering
+
+__text-align: center;__ only works on _inline_ elements and _NOT block_ elements.
+
+__margin: 0px auto;__ for block elements and _not_ inline, the auto means make it the same on both sides, 
+
+### Vertical Centering
+
+__vertical-align: top;__ applies to the element _inside_. The one you want centered, not on the parent. It only works one a <p> if it is _dispaly:inline-block;_.
+
+The position style has discrete values:
+* static: Default value which makes the elements on the page flow nicely. Inline elements live _side-by-side_ as wide as the container allows, then they go down to the next line.
+* relative: Participates in the layout of the page as normal, but then is moved _relative_ to where it would have been. Positioned relative to its first positioned parent.
+* absolute: Takes it out of the document flow. Positions it _absolutely_ on the page.
+* fixed: Will be _fixed_ to a spot in the browser and __not__ the page. Ignores everything else on the page. 
+
+# Page Layout Strategy
+
+Pages have differentsections which require some planning to lay them out nicely. 
+
+Three good tips on how to achieve this goal are:
+1. Define sections
+2. Define sizes
+3. Get them to live side-by-side
+
+You can do this by preferably using _inline sections_, but you could also use _tables_ or _absolute positioning_, although these are discouraged.
+
+You'll want to have a hybrid of __inline__ and __block__ elements, such as the following: 
+- floated divs
+- display: inline-block
+- flex boxes
+- grids
+
+A __floated__ element allows things below it to float up next to it- __IF THERE IS ROOM__.
+
+__clear__ allows for the last item to be dropped below the floated elements.
+
+__display: inline-block__ honors width like a block, and allows side-by-side like an inline. However, alignment and spacing are issues because they're vertically aligned at the bottom and there's a space between sections even with no margin. :(
+
+__flexbox__ lays out either across or down but not both. If there are too many items, you can wrap it down to the next line, and if you don't then you can decide how to allocate the extra space.
+
+__grid__ is basically a cleaner _table_.
+
+# Layouts with Flexbox
+
+
+
+# Layouts with Grid
+
+__grids__ allow us to lay out pages in grids and columns by assigning lines between them to create the cells. You can even combine the cells to create sections and assign items to the sections. 
+
+_containers_ have _items_, containers have _lines_ that define the rows and columns, _cells_ are where the tracks intersect, cells can be combined into rectangular _areas_.
+
+A __container__ can be ANYTHING in your document.
+
+__fr__ is _free space_. This is better than __%__ because it takes into account grid gaps. 
+
+__grids__ will ONLY and ALWAYS place it's direct children. Just like __flexbox__.
+
+We usually want to let heights be changed based on the content. Do this by specifying _auto_ for the height of the row. 
+
+ 
+# How do I make this layout?
+
+There is more than one way to create your webpage, but you want to make sure it not only looks good, but is also well constructed. 
