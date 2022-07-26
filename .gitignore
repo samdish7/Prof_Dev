@@ -1,3 +1,4 @@
 # ignore useless files
 __pycache__
 *.swp
+.DS_Store

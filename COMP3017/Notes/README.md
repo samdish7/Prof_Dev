@@ -85,4 +85,6 @@ Some values in CSS are quite... cumbersome, so the solution to this is to create
 
 # Semantic Grouping
 
+HTML5 semantic elements communicate _meaning_. A __nav__ section is used with links or to parts within the page. 
 
+A __header__ contains the stuff at the top of a section as well as a __footer__ contains the stuff at the bottom of the section.
