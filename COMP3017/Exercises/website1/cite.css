@@ -34,13 +34,15 @@ padding: 5px 5px 5px 5px;
 }
 
 /*classes*/
-.brief_poster{
-}
-
-.social_icon{
+.social > li > a > img{
 height: 30px;
 text-align: center;
 }
+
+.social > li > a > img:hover{
+transform: scale(1.3, 1.3) skew(10deg, 10deg);
+transition-duration: 0.5s;
+} 
 
 .film_brief{
 border: 1px solid;
@@ -55,6 +57,10 @@ grid-template-areas:
 'post infor'
 'times times';
 box-shadow: 5px 5px 8px green;
+}
+
+.film_brief:hover{
+background-color: var(--light2_color);
 }
 
 /*film brief grid templates*/
@@ -115,15 +121,15 @@ margin-left: 1em;
 height: 40px;
 }
 
+.page_head > a >img:active{
+transform: rotateY(180deg);
+}
+
 .day{
 float: left;
 padding: 15px 15px 5px 15px;
 font-style: italic;
 font-size: 2em;
-}
-
-.last{
-clear: both;
 }
 
 .social{
@@ -149,6 +155,13 @@ list-style-type: none;
 text-align: center;
 padding: 10px 10px 10px 10px;
 }
+
+#day_chooser > ul::after{
+content: " ";
+display: block;
+clear: both;
+}
+
 
 #text{
 display: flex;
@@ -182,7 +195,7 @@ text-align: left;
 	body {
 	}
 
-	#bye{
+	#day_chooser > ul > li:nth-child(3) ~ li{
 		display: none;
 	}
 	
