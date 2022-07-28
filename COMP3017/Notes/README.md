@@ -197,3 +197,73 @@ We usually want to let heights be changed based on the content. Do this by speci
 # How do I make this layout?
 
 There is more than one way to create your webpage, but you want to make sure it not only looks good, but is also well constructed. 
+
+(We did a bunch of examples in class on what layout we think would best suite the screens given)
+
+# Progressive Web Apps & Responsive Design
+
+__PWAs__ have tons of requirements, but they allow for offline use. So it is very useful. This is where __Media Queries__ come in. They rely on responsive web designs that flex when browsed on many devices.
+
+__PWAs__:
+* Must be served over HTTPS
+* Run offline
+* Can have an icon on the home screen
+
+Some people add even more requirements:
+* Responsive
+* Loads instantly (funny)
+* Asks the user to add to home screen
+* Push notifications
+* Runs fast even on slow networks
+* Cross-browser
+* Page transitions are fast
+* Each page gets its own URL
+
+There are many other applications for web apps, not just shopping. Many businesses run their platforms in some type of mobile way.
+
+We want to create an experience that convinces the user that they are online when they are actually not. Use local storages, re-syncing, and try to keep the activity as legit as possible while offline.
+
+
+You can use the _media_ attribute, to allow for many screen readers to be able to view your content easily. 
+
+# Modern CSS
+
+CSS styles give the look and feel by setting colors, fonts, sizes, and other graphical features.
+
+There are __16,777,216__ colors availble in the RGB range.
+
+Web fonts allow you to expand beyond the installed fonts. You can use them as long as they are free :grinning:.
+
+Data uris _may_ speed up your images, but use caution!
+
+# Advanced CSS Selectors
+
+CSS __selectors__ allow us great flexibility in pointing to elements on a page. 
+We can point to these elements by id, class, and type, but they go much deeper as in position, attributes, state, and more,
+
+Class selectors allow you to group elements any way you see fit. 
+
+You can also _concatenate_ them!
+
+A comma means you're applying a style to two or more selectors.
+
+## Relationship Selectors
+
+The __DOM__ also points to the relationships between elements. You are able to select descendants as well asn direct children.
+
+## Pseudo-classes
+
+Denoted with a _:_, these are similar, but not actually classes from css. Examples of these are:
+* :link
+* :visited
+* :hover
+* :active
+* :focus
+and many, many more.
+
+## Pseudo-elements
+
+Denoted with a _::_, these point to otherwise inaccessible parts of the page. The __::before__ & __::after__ selectors allow you to insert content _inside_  an element. 
+# CSS Transforms and Transitions
+
+

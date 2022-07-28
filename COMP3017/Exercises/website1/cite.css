@@ -35,7 +35,6 @@ padding: 5px 5px 5px 5px;
 
 /*classes*/
 .brief_poster{
-height: 250px;
 }
 
 .social_icon{
@@ -54,20 +53,32 @@ display: grid;
 grid-template-columns: auto 1fr;
 grid-template-areas: 
 'post infor'
-'times times'
+'times times';
+box-shadow: 5px 5px 8px green;
 }
 
-/*film brief gird templates*/
+/*film brief grid templates*/
 .poster{
 grid-area: post;
 }
 
+.poster > img{
+height: 250px;
+}
+
 .showing_times{
 grid-area: times;
+align-items: space-between;
+}
+
+.showing_times > ul > li{
+float: left;
+padding: 3px 3px 3px 3px;
 }
 
 .info{
 grid-area: infor;
+text-align: left;
 }
 
 
@@ -78,6 +89,10 @@ justify-content: center;
 }
 
 .page_head{
+padding: 10px 10px 30px 30px;
+background-color: var(--white);
+width: 98vw;
+box-shadow: 5px 10px 8px #808080;
 display: flex;
 align-items: center;
 box-sizing: border-box;
@@ -85,18 +100,30 @@ justify-content: space-between;
 flex-grow: 0;
 }
 
+.page_head > img{
+height: 60px;
+}
+
+.page_head > p{
+margin-left: 1em;
+}
+
+.page_head > a{
+margin-left: 1em;
+}
+.page_head > a > img{
+height: 40px;
+}
+
 .day{
 float: left;
-padding: 5px 5px 5px 5px;
+padding: 15px 15px 5px 15px;
+font-style: italic;
+font-size: 2em;
 }
 
 .last{
 clear: both;
-}
-
-.time{
-float: left;
-padding: 3px 3px 3px 3px;
 }
 
 .social{
@@ -105,18 +132,14 @@ justify-content: space-around;
 width: 450px;
 }
 
-/*ids*/
-#page_head{
-position: fixed;
-top: 0px;
-left: 0px;
-background-color: var(--light_color);
-width: 100vw;
+.deets{
+text-align: center;
 }
 
-
+/*ids*/
 #title{
 text-align: center;
+font-size: 3em;      
 }
 
 #day_chooser{
@@ -127,14 +150,6 @@ text-align: center;
 padding: 10px 10px 10px 10px;
 }
 
-#logo{
-height: 50px;
-}
-
-#cart{
-height: 40px;
-}
-
 #text{
 display: flex;
 }
@@ -142,8 +157,41 @@ display: flex;
 /*detail.html poster*/
 #poster{
 display: flex;
+height: 500px;
+}
+
+/*detail.html info*/
+#info{
+margin-right: 100px;
+text-align: left;
 }
 
 #space{
 flex-grow: 1;
+}
+
+#tagline{
+font-size: 2em;
+}
+
+#overview{
+text-align: left;
+}
+
+@media (max-width:768px) {
+	body {
+	}
+
+	#bye{
+		display: none;
+	}
+	
+	#poster{
+		flex-direction: column;
+	}
+
+	#info{
+		flex-direection: column;
+	}
+
 }
