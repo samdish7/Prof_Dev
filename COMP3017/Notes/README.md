@@ -264,6 +264,35 @@ and many, many more.
 ## Pseudo-elements
 
 Denoted with a _::_, these point to otherwise inaccessible parts of the page. The __::before__ & __::after__ selectors allow you to insert content _inside_  an element. 
+
 # CSS Transforms and Transitions
+
+Transforms can make our sites come alive with translate, scale, rotate, and more. The transition features allows us to create smooth transforms with control over duration, intial delay, and the easing function,
+
+This allows us to drastically reduce the size of our programs and they are more robust that way.
+
+The __timing__ function tells how the transition _accelerates_ over time.
+
+The __delay__ tells how long to wait before the beginning.
+
+# Tables
+
+HTML tables are for __data__, not __layout__. They can have their own headers and footers, as well as they span rows and columns.
+
+# Best Practices with Forms
+
+Forms are used to collect data from the user and then send them to a server for processing. A few of these forms are:
+* textarea: These are for _multiline_ items in forms
+* select: These are for _listboxes_ or _dropdowns_
+* datalist: These are for _everything else_
+
+There are lots of <input> fields with types like:
+* text
+* search
+* number
+* range
+* email
+
+The __form__ tag posts their data in the __POST__ request's payload.
 
 
