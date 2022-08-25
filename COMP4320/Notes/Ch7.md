@@ -97,4 +97,18 @@ A _Union_ type is allowed to be one of a number of possible types
 
 ### _Optional_ Types
 
-An important specific case of _Union_ types is the _Optional_ type. This is either _None_, or a specifed type. 
+An important specific case of _Union_ types is the _Optional_ type. This is either _None_, or a specifed type. This works well for type-checking potentially absent-value cases. 
+
+## functools.singledispatch 
+
+This decorator allows multiple definitions of the same function, passing in different types for _first_ arguments. All additional registered functions must __not__ share the same function or method name as the orginally decorated function, unlike _@property_. 
+
+## multimethod
+
+Same thing as above, but it allows for multiple different arguments in each function. 
+
+## Stub Type Hinting
+
+While Type hinting can be a useful tool, it can be limiting when integrating with other source code. The _mypy_ utility can actually read a seperate file to find out the type interface of a different module. 
+
+[Stub Docs](https://mypy.readthedocs.io/en/stable/stubs.html)
