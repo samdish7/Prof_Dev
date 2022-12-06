@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font: 100% Helvectica, sans-serif;
+    color: #333;
+    background-color: #ddd;
+}
+
+nav u1{
+    list-style: none;
+}
+
+nav a{
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    color: #ccc;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    color: #ccc;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+.message, .info, .error,{
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.message {
+    border-color: black;
+}
+
+.info {
+    border-color: yellow;
+}
+
+.error {
+    border-color: red;
+}
