@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Pipe, PipeTransform } from '@angular/core';
 import { Publication } from '../publication';
 
 @Component({
@@ -16,7 +16,7 @@ export class BookInvComponent implements OnInit{
         topic: "Hit All Angles with Angular",
         price: 900.00,
         feature: false,
-        photos: ["/assets/", "/assets/"]
+        photos: ["/assets/r1.jpg", "/assets/r2.jpg"]
     },
     {   
         id: 1235,
@@ -25,7 +25,7 @@ export class BookInvComponent implements OnInit{
         topic: "Hit All Angels with Angular",
         price: 900.12,
         feature: false,
-        photos: ["/assets/", "/assets/"]
+        photos: ["/assets/ang2.jpg", "/assets/ang1.png"]
     },
     {   
         id: 1236,
@@ -34,7 +34,7 @@ export class BookInvComponent implements OnInit{
         topic: "Hit All Memory Leaks with Angular",
         price: 900.69,
         feature: true,
-        photos: ["/assets/", "/assets/"]
+        photos: ["/assets/ang3.jpg", "/assets/ts1.jpg", "/assets/ts3.png"]
     },
     ]
     ngOnInit(){};

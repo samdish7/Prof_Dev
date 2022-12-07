@@ -1,0 +1,10 @@
+<div>
+  <div>
+    <img [src]="imageList[currIndex]"/>
+  </div>
+  <div>
+  <button [disabled]="currIndex==0" (click)="movePrevious()">Previous</button>
+  <button [disabled]="currIndex==imageList.length-1" (click)="moveNext()">Next</button>
+  </div>
+</div>
+

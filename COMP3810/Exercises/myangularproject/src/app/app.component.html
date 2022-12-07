@@ -302,11 +302,26 @@
   }
 </style>
 
-<!--Counter-->
+<!--My Apps-->
 <app-counter></app-counter>
 <app-counter></app-counter>
 <app-book-inv></app-book-inv>
 
+
+<div class="container mt-5" style="max-width: 550px;">
+  <div class="form-group">
+    <input type="text" class="form-control mb-4" placeholder="Search" [(ngModel)]="query" id="listSearch">
+  </div>
+  <div class="card mb-1" *ngFor="let data of students | example: query">
+    <div class="card-body">
+      <h5 class="card-title">{{data.name}}</h5>
+      <p class="card-text">{{data.email}}</p>
+    </div>
+  </div>
+</div>
+
+<button appBtn>My Button</button>
+<h1 *appNot="true">True</h1><h1 *appNot="false">False</h1>
 <!-- Toolbar >
 <div class="toolbar" role="banner">
   <img

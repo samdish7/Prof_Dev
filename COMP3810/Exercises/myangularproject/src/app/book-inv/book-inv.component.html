@@ -1,9 +1,11 @@
 <h1> Current Inventory </h1>
-    <p *ngIf="inv.length==3">Empty!</p>
+    <p *ngIf="inv.length==0">Empty!</p>
     <div *ngFor="let book of inv; "
      [ngClass]="{'featured-item': book.feature}">
-       <h3>{{book.year}} {{book.topic}}, {{book.author}}</h3>
+       <h3>{{book.year}} {{book.topic | titlecase}}, {{book.author}}</h3>
        <p *ngIf="book.feature">Featured book of the month!</p>
        <p>ISBN: {{book.id}}</p>
-       <p> ${{book.price}}</p>
+       <p> {{book.price | currency:'CAD'}}</p>
+       <p class="gallery">
+         <app-photo-gallery *ngIf = "book.photos.length > 0" [photos]="book.photos"></app-photo-gallery>
     </div>
